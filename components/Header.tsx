@@ -1,10 +1,12 @@
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 type Props = {}
 
 function Header({}: Props) {
+  const router = useRouter()
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -40,7 +42,7 @@ function Header({}: Props) {
           bgColor="transparent "
         />
       </motion.div>
-      <Link href="#contact">
+      <div onClick={() => router.push("#contact")}>
         <motion.div
           initial={{
             x: 500,
@@ -67,7 +69,7 @@ function Header({}: Props) {
             Get in touch
           </p>
         </motion.div>
-      </Link>
+      </div>
     </header>
   )
 }
