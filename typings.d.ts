@@ -1,5 +1,3 @@
-import { Stringifier } from "postcss"
-
 interface SanityBody {
   _createdAt: string
   _id: string
