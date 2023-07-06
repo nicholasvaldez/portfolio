@@ -25,7 +25,7 @@ export interface PageInfo extends SanityBody {
   profilePic: Image
 }
 
-export interface Techology extends SanityBody {
+export interface Technology extends SanityBody {
   _type: "skill"
   image: Image
   title: string
@@ -40,10 +40,10 @@ export interface Skill extends SanityBody {
 export interface Project extends SanityBody {
   title: string
   _type: "project"
-  image: Image
+  heroImage: Image
   linkToBuild: string
   summary: string
-  technologies: Techology[]
+  technologies: Technology[]
 }
 
 export interface Social extends SanityBody {

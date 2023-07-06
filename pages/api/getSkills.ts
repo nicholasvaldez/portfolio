@@ -4,7 +4,7 @@ import { sanityClient } from "@/sanity"
 import { Skill } from "@/typings"
 
 const query = groq`
-    *[_type== "skill"]
+    *[_type == "skill"]
 `
 
 type Data = {
@@ -16,6 +16,8 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const skills: Skill[] = await sanityClient.fetch(query)
+
+  // console.log(skills)
 
   res.status(200).json({ skills })
 }
