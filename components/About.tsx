@@ -27,13 +27,13 @@ function About({ pageInfo }: Props) {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]"
       />
 
-      <div className="space-y-10 px-0 md:px-10 ">
+      <div className="space-y-5 md:space-y-10 sm:w-auto relative md:static w-full">
         <h4 className="text-4xl font-semibold">
           Here's a{" "}
           <span className="underline decoration-[#F6D0B1]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base w-[420px] h-[100px] xs:w-[420px] sm:h-[100px] md:w-[500px] md:h-[320px] lg:w-[700px] lg:h-[430px] overflow-scroll ">
+        <p className="text-base w-[100%] h-[190%] sm:h-[100px] md:w-[500px] md:h-[320px] lg:w-[700px] lg:h-[430px] overflow-y-scroll absolute md:static scrollbar scrollbar-track-gray-400/20 md:scrollbar-track-transparent scrollbar-thumb-[#F6D0B1]/80 ">
           {pageInfo.backgroundInformation}
         </p>
       </div>

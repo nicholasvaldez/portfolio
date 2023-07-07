@@ -3,6 +3,7 @@ import { Project } from "@/typings"
 import { motion } from "framer-motion"
 import Skill from "./Skill"
 import Link from "next/link"
+
 type Props = {
   projects: Project[]
 }
@@ -19,7 +20,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
+      <div className="relative w-[90%] h-[90] lg:w-full lg:h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
         {projects?.map((p) => (
           <div
             key={p._id}
@@ -39,25 +40,30 @@ function Projects({ projects }: Props) {
                 className="xl:w-[600px]"
               />
             </Link>
-            <div className="space-y-5 px-0 md:px-10 max-w-6xl">
+            <div
+              key={p._id}
+              className="space-y-5 px-0 md:px-10 max-w-6xl w-[90%] lg:w-full"
+            >
               <Link href={p.linkToBuild}>
                 <h4 className="text-4xl font-semibold text-center">
                   {p.title}
                 </h4>
               </Link>
-              <div className="flex items-center space-x-2 justify-center">
+              <div className="flex items-center space-x-2 justify-center ">
                 {p?.technologies.map((tech) => {
                   return (
                     <img
                       className="h-10 w-10"
-                      key={tech._id}
+                      key={p._id}
                       src={urlFor(tech.image).url()}
                       alt={tech.title}
                     />
                   )
                 })}
               </div>
-              <p className="text-sm text-center md:text-left">{p.summary}</p>
+              <p className="text-sm text-center md:text-left scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80 h-[60%]">
+                {p.summary}
+              </p>
             </div>
           </div>
         ))}
