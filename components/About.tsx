@@ -24,10 +24,10 @@ function About({ pageInfo }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="-mb-44 md:-mb-10 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]"
+        className="-mb-36 md:-mb-10 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]"
       />
 
-      <div className="space-y-5 pb-32 md:pb-0 md:space-y-10 sm:w-auto relative md:static w-full">
+      <div className="space-y-5 pb-52 md:pb-0 md:space-y-10 sm:w-auto relative md:static w-full">
         <h4 className="text-4xl font-semibold">
           Here's a{" "}
           <span className="underline decoration-[#F6D0B1]/50">little</span>{" "}
