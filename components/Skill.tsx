@@ -17,7 +17,7 @@ function Skill({ url, directionLeft }: Props) {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         src={url}
-        className="w-24 h-24 rounded-full border border-gray-500 object-cover xl:w-32 xl:h-32"
+        className="w-20 h-20 rounded-full border border-gray-500 object-cover xl:w-32 xl:h-32"
       />
     </div>
   )
