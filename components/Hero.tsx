@@ -50,7 +50,7 @@ function Hero({ pageInfo }: Props) {
           <Link href="#projects">
             <button className="heroButton">Projects</button>
           </Link>
-          <Link href="https://drive.google.com/file/d/1Zq-SDOPJ0d9VkDtLWHqcHamA_Cw1kR0e/view?usp=sharing">
+          <Link href="https://drive.google.com/file/d/1tzcWaJzj_RGSEW5FPQLXCmmDKBtqAzQf/view?usp=sharing">
             <button className="heroButton">Resume</button>
           </Link>
         </div>
