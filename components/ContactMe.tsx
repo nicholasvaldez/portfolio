@@ -64,7 +64,7 @@ function ContactMe({}: Props) {
           <input
             {...register("subject")}
             placeholder="Subject"
-            className="contactInput h-2 md:h-full"
+            className="contactInput "
             type="text"
           />
           <textarea
