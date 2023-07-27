@@ -20,7 +20,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
 
-      <div className="relative w-[90%] h-[725px] lg:w-full lg:h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
+      <div className="relative w-[90%] h-[600px] lg:w-full lg:h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
         {projects?.map((p) => (
           <div
             key={p._id}
@@ -61,7 +61,7 @@ function Projects({ projects }: Props) {
                   )
                 })}
               </div>
-              <p className="px-3 text-sm text-center md:text-left overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80 h-[60%]">
+              <p className="px-3 text-sm text-center md:text-left overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80 h-80">
                 {p.summary}
               </p>
             </div>
