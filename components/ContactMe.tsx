@@ -21,8 +21,8 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 md:h-[500px] h-[470px] w-full">
-        <h4 className="text-3xl font-semibold text-center ">
+      <div className="flex flex-col space-y-3 md:space-y-10 md:h-[500px]  w-full">
+        <h4 className="text-3xl font-semibold text-center pt-10 ">
           I'm just what your team needs.{" "}
           <span className="underline decoration-[#F6D0B1]/50">
             {" "}
