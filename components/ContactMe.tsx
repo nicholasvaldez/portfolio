@@ -21,7 +21,7 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 md:h-[500px] h-[470px]">
+      <div className="flex flex-col space-y-10 md:h-[500px] h-[470px] w-full">
         <h4 className="text-3xl font-semibold text-center ">
           I'm just what your team needs.{" "}
           <span className="underline decoration-[#F6D0B1]/50">
@@ -29,7 +29,7 @@ function ContactMe({}: Props) {
             Let's talk.
           </span>
         </h4>
-        <div className="space-y-10">
+        <div className=" space-y-2 md:space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F6D0B1] h-7 w-7 animate-pulse" />
             <p className="text-2xl">(713) 435-9620</p>
@@ -45,9 +45,9 @@ function ContactMe({}: Props) {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-52 md:w-fit mx-auto "
         >
-          <div className="flex space-x-2">
+          <div className="space-y-2 md:flex md:space-x-2 md:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
@@ -74,7 +74,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#F6D0B1] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#F6D0B1] py-2 md:py-5 px-10 rounded-md text-black font-bold text-lg "
           >
             Submit
           </button>
