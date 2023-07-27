@@ -21,7 +21,7 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact
       </h3>
-      <div className="flex flex-col space-y-3 md:space-y-10 md:h-[500px]  w-full">
+      <div className="flex flex-col space-y-3 md:space-y-10 md:h-[500px] h-[72%] w-full">
         <h4 className="text-3xl font-semibold text-center pt-10 ">
           I'm just what your team needs.{" "}
           <span className="underline decoration-[#F6D0B1]/50">
@@ -51,20 +51,20 @@ function ContactMe({}: Props) {
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput h-2 md:h-full"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="contactInput h-2 md:h-full"
               type="email"
             />
           </div>
           <input
             {...register("subject")}
             placeholder="Subject"
-            className="contactInput"
+            className="contactInput h-2 md:h-full"
             type="text"
           />
           <textarea
