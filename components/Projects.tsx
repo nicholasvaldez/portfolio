@@ -20,7 +20,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
 
-      <div className="relative w-[90%] h-[90] lg:w-full lg:h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
+      <div className="relative w-[90%] h-[725px] lg:w-full lg:h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80  ">
         {projects?.map((p) => (
           <div
             key={p._id}
@@ -42,7 +42,7 @@ function Projects({ projects }: Props) {
             </Link>
             <div
               key={p._id}
-              className="space-y-5 px-0 md:px-10 max-w-6xl w-[90%] lg:w-full"
+              className="space-y-5 px-0 md:px-10 max-w-6xl w-[90%] md:w-[690px] md:pb-10 lg:w-full"
             >
               <Link href={p.linkToBuild}>
                 <h4 className="text-4xl font-semibold text-center">
@@ -61,7 +61,7 @@ function Projects({ projects }: Props) {
                   )
                 })}
               </div>
-              <p className="text-sm text-center md:text-left scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80 h-[60%]">
+              <p className="px-3 text-sm text-center md:text-left overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F6D0B1]/80 h-[60%]">
                 {p.summary}
               </p>
             </div>
